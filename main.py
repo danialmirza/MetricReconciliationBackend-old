@@ -7,7 +7,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-DB_URI = "mongodb+srv://admin:" + urllib.parse.quote("[P@ssw0rd]") + "@cluster0.872hs.mongodb.net/test"
+DB_URI = "mongodb+srv://admin:" + urllib.parse.quote(<password>) + "@cluster0.872hs.mongodb.net/test"
 app.config["MONGODB_HOST"] = DB_URI
 
 db = MongoEngine()
